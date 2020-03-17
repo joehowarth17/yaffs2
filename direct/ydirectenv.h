@@ -29,6 +29,7 @@ void yaffs_bug_fn(const char *file_name, int line_no);
 
 #define BUG() do { yaffs_bug_fn(__FILE__, __LINE__); } while (0)
 
+typedef long long loff_t;
 
 #define YCHAR char
 #define YUCHAR unsigned char
